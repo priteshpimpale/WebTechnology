@@ -49,7 +49,7 @@ var excercise4 = function(nums){
     var arrLength = nums.length,
     i=0;
     for(;i<arrLength;i++){
-        if(nums[i]%2 != 0){
+        if(nums[i]%2 !== 0){
             return false;
         }
     }
