@@ -1,3 +1,7 @@
+/*jshint browser:true*/ 
+/*globals _*/
+"use strict";
+
 // Average of array
 var excercise1 = function(nums) {
     var sum=0,
@@ -42,27 +46,19 @@ var usexcercise3 = function(nums){
 
 // all the elements are even
 var excercise4 = function(nums){
-    /*var arrLength = nums.length,
+    var arrLength = nums.length,
     i=0;
     for(;i<arrLength;i++){
         if(nums[i]%2 != 0){
             return false;
         }
     }
-    return true;*/
-    
-    return nums.every(elem => elem % 2 === 0);
-    /*
-    return nums.every(function(n){
-        return n % 2 == 0;
-    });*/
+    return true;
 };
 var usexcercise4 = function(nums){
-    /*return _.every(nums,function(n){
-        return n % 2 == 0;
-    });*/
-    
-    return _.every(nums,n => n % 2 === 0);
+    return _.every(nums,function(n){
+        return n % 2 === 0;
+    });
 };
 
 // array contains the queried item
@@ -70,7 +66,7 @@ var arrayContains = function(strArray, query){
     var arrLength = strArray.length,
     i=0;
     for(;i<arrLength;i++){
-        if(strArray[i] == query){
+        if(strArray[i] === query){
             return true;
         }
     }
@@ -83,7 +79,7 @@ var arrayContainsTwo = function(strArray, query){
     arrLength = strArray.length,
     i=0;
     for(;i<arrLength;i++){
-        if(query == strArray[i]){
+        if(query === strArray[i]){
             counter++;
             if(counter >= 2){
                 return true;
@@ -99,7 +95,7 @@ var arrayContainsThree = function(strArray, query){
     var arrLength = strArray.length,
     i=0;
     for(;i<arrLength;i++){
-        if(query == strArray[i]){
+        if(query === strArray[i]){
             counter++;
             if(counter >= 3){
                 return true;
@@ -115,7 +111,7 @@ var arrayContainsNTimes = function(strArray, query, n){
     var arrLength = strArray.length,
     i=0;
     for(;i<arrLength;i++){
-        if(query == strArray[i]){
+        if(query === strArray[i]){
             counter++;
             if(counter >= n){
                 return true;
