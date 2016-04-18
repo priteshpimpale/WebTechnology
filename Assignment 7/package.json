@@ -1,0 +1,17 @@
+{
+  "name": "assignment-7",
+  "version": "1.0.0",
+  "description": "assignment-7",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "body-parser": "^1.15.0",
+    "mongodb": "^2.1.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "Pritesh",
+  "license": "ISC"
+}
